@@ -1,16 +1,8 @@
-import { Component } from 'react'
+import React from 'react'
 import { render } from 'react-dom'
 
-class MyComponent extends Component {
-  state = {
-    data: ''
-  }
-  componentDidMount() {
-    this.setState({ data: '123' })
-  }
+export class MyComponent extends React.Component {
   render() {
-    return <div> { this.state.data } </div>
+    return <div>HELLO</div>
   }
 }
-
-export default MyComponent;
